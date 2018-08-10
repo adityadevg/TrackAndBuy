@@ -1,0 +1,3 @@
+[submodule "track_and_buy_server"]
+	path = track_and_buy_server
+	url = https://github.com/apollographql/apollo-tutorial-kit
