@@ -3,27 +3,22 @@ const StocksAPI = require('./stocksapi.js');
 
 const typeDefs = gql`
   type Stock {
-    symbol: String
-    price: Float
-  }
-  type Query {
-    stock(symbol: String!): Stock!
-    stocks: [Stock!]!
-  }
- ` 
-/*
+    symbol: String!
+    price: Float!
     open: Float!
     high: Float!
-    low: Float!volume: Float!
+    low: Float!
+    volume: Float!
     latest: String!
-    trading: String!
-    day: String!
     previous: Float!
-    close: Float!
     change: Float!
-    percent: String!
-
-*/
+    change_percent: String!
+  }
+  type Query {
+    stock(symbol: String!): Stock
+    stocks: [Stock!]!
+  }
+ `
 
 const resolvers = {
   Query: {
