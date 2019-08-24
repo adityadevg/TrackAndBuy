@@ -4,6 +4,8 @@
 # Install all required dependencies
 # Nodejs
 sudo apt install nodejs npm
+# Ruby
+sudo apt install ruby
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
@@ -20,6 +22,8 @@ source ~/.bash_profile
 # npm
 npm i --prefix ./server graphql apollo-server apollo-datasource-rest --save
 
+# Install Ruby Gems for client
+gem install --install-dir client/ graphql rails
 
 # Request API Key from user
 echo "Enter your AlphaVantage Key. You can find your key by going to
@@ -32,3 +36,6 @@ echo "module.exports = { apikey: '"$apikey"'};" > server/vars.env
 
 # Execute the application
 node server/server.js
+
+
+

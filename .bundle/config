@@ -1,0 +1,6 @@
+---
+BUNDLE_PATH: "client/"
+BUNDLE_BIN: "client/"
+BUNDLE_GEMFILE: "client/"
+BUNDLE_AUTO_INSTALL: "true"
+BUNDLE_CACHE_PATH: "client/"
