@@ -1,0 +1,13 @@
+current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/json-2.2.0/ext/json
+/usr/bin/ruby2.5 -r ./siteconf20190902-24757-g8uofe.rb extconf.rb
+creating Makefile
+
+current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/json-2.2.0/ext/json
+make "DESTDIR=" install
