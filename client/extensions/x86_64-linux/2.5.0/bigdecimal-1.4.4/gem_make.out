@@ -1,5 +1,5 @@
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/bigdecimal-1.4.4/ext/bigdecimal
-/usr/bin/ruby2.5 -r ./siteconf20190902-24757-gsmryd.rb extconf.rb
+/usr/bin/ruby2.5 -r ./siteconf20190902-25921-hwkdrr.rb extconf.rb
 checking RUBY_BIGDECIMAL_VERSION... 1.4.4
 checking for labs() in stdlib.h... yes
 checking for llabs() in stdlib.h... yes
@@ -22,4 +22,4 @@ linking shared-object bigdecimal.so
 
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/bigdecimal-1.4.4/ext/bigdecimal
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20190902-24757-w0opiz
+/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20190902-25921-issxyr
