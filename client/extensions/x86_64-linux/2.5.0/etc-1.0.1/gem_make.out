@@ -1,5 +1,5 @@
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/etc-1.0.1/ext/etc
-/usr/bin/ruby2.5 -r ./siteconf20190902-28524-1k7e24a.rb extconf.rb
+/usr/bin/ruby2.5 -r ./siteconf20190902-15041-1f0fb2v.rb extconf.rb
 checking for sys/utsname.h... yes
 checking for getpwnam() in -lsun... no
 checking for uname((struct utsname *)NULL) in sys/utsname.h... yes
@@ -30,4 +30,4 @@ linking shared-object etc.so
 
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/etc-1.0.1/ext/etc
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 etc.so ./.gem.20190902-28524-n7b4p
+/usr/bin/install -c -m 0755 etc.so ./.gem.20190902-15041-k4324l
