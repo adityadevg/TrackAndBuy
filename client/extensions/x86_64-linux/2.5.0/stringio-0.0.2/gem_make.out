@@ -1,5 +1,5 @@
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/stringio-0.0.2/ext/stringio
-/usr/bin/ruby2.5 -r ./siteconf20190902-27619-1b9xfal.rb extconf.rb
+/usr/bin/ruby2.5 -r ./siteconf20190902-28524-7qau7e.rb extconf.rb
 creating Makefile
 
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/stringio-0.0.2/ext/stringio
@@ -12,4 +12,4 @@ linking shared-object stringio.so
 
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/stringio-0.0.2/ext/stringio
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 stringio.so ./.gem.20190902-27619-76ep09
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20190902-28524-1kc4imn
