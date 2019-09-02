@@ -1,5 +1,5 @@
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/io-console-0.4.8/ext/io/console
-/usr/bin/ruby2.5 -r ./siteconf20190902-15041-1uavchm.rb extconf.rb
+/usr/bin/ruby2.5 -r ./siteconf20190902-15928-zg2m00.rb extconf.rb
 checking for termios.h... yes
 checking for cfmakeraw() in termios.h... yes
 checking for sys/ioctl.h... yes
@@ -15,4 +15,4 @@ linking shared-object io/console.so
 
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/io-console-0.4.8/ext/io/console
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 console.so ./.gem.20190902-15041-3y13is/io
+/usr/bin/install -c -m 0755 console.so ./.gem.20190902-15928-h93v56/io
