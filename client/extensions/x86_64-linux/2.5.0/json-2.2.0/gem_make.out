@@ -1,5 +1,5 @@
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/json-2.2.0/ext/json
-/usr/bin/ruby2.5 -r ./siteconf20190902-15928-1ewnj3r.rb extconf.rb
+/usr/bin/ruby2.5 -r ./siteconf20190902-17638-jvsuyx.rb extconf.rb
 creating Makefile
 
 current directory: /home/adityadev/Documents/Projects/TrackAndBuy/client/gems/json-2.2.0/ext/json
