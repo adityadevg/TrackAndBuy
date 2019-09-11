@@ -5,7 +5,7 @@
 # Nodejs
 sudo apt install nodejs npm -y
 # Ruby
-sudo apt install ruby ruby-dev -y
+sudo apt install ruby ruby-dev ruby-railties -y
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
@@ -38,6 +38,3 @@ echo "module.exports = { apikey: '"$apikey"'};" > server/vars.env
 
 # Execute the application
 node server/server.js
-
-
-
