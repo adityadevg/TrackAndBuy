@@ -19,3 +19,26 @@ master
 /client/build_info/
 /client/bin/thor
 /client/.bundle/
+
+# Ignore the default SQLite database.
+/client/db/*.sqlite3
+/client/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/client/log/*
+/client/tmp/*
+!/client/log/.keep
+!/client/tmp/.keep
+
+# Ignore uploaded files in development
+/client/storage/*
+!/client/storage/.keep
+
+/client/node_modules
+/client/yarn-error.log
+
+/client/public/assets
+/client.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/client/config/master.key
