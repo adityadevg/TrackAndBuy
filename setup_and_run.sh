@@ -5,7 +5,7 @@
 # Nodejs
 sudo apt install nodejs npm -y
 # Ruby
-sudo apt install ruby ruby-dev ruby-railties -y
+sudo apt install ruby ruby-dev ruby-railties ruby-bundler -y
 
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
