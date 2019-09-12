@@ -25,6 +25,7 @@ npm i --prefix ./server graphql apollo-server apollo-datasource-rest --save
 
 # Install and Update Ruby Gems for client
 gem install --install-dir client/ bundler graphql rails
+gem install nokogiri --install-dir client/ --source 'https://rubygems.org/'
 gem update --install-dir client/
 
 # Run bundler to install Ruby gems
