@@ -27,6 +27,9 @@ npm i --prefix ./server graphql apollo-server apollo-datasource-rest --save
 gem install --install-dir client/ bundler graphql rails
 gem update --install-dir client/
 
+# Run bundler to install Ruby gems
+bundle install --path client/
+
 # Request API Key from user
 echo "Enter your AlphaVantage Key. You can find your key by going to
 https://www.alphavantage.co/support/#api-key

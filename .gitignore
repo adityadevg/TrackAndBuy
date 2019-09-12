@@ -9,8 +9,9 @@
 /server/vars.env
 
 # Temporary files that get generated on execution of setup_and_rn.sh
-/client/extensions
-/client/cache
+/server/etc/
+/client/extensions/
+/client/cache/
 /client/specifications/
 /client/doc/
 /client/gems/
