@@ -22,21 +22,21 @@ source ~/.bash_profile
 # Install npm dependencies for graphql_server
 npm i --prefix ./graphql_server graphql apollo-server apollo-datasource-rest --save
 
-# Install and Update Ruby Gems for client
-gem install --install-dir client/ bundler graphql rails
+# Install and Update Ruby Gems for rails_app
+gem install --install-dir rails_app/ bundler graphql rails
 
 # Install nokogiri, sqlite3
 sudo apt install libxslt-dev libxml2-dev zlib1g-dev libsqlite3-dev -y
-gem install --install-dir client/ nokogiri --source 'https://rubygems.org/'
-gem install --install-dir client/ sqlite3 --source 'https://rubygems.org/'
+gem install --install-dir rails_app/ nokogiri --source 'https://rubygems.org/'
+gem install --install-dir rails_app/ sqlite3 --source 'https://rubygems.org/'
 
 
 # Update existing gems
-gem update --install-dir client/
+gem update --install-dir rails_app/
 
 # Run bundler to install Ruby gems
 bundle install
-#bundle install --path client/
+#bundle install --path rails_app/
 bundle update
 
 
