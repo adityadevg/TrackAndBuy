@@ -1,6 +1,7 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 # Dependencies
 graphql_server/node_modules/
+graphql_server/package-lock.json
 
 # System Files
 .DS_Store
