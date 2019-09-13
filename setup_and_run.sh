@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Install all required dependencies
 # Nodejs
 sudo apt install nodejs npm -y
@@ -16,12 +15,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# Reload bash environment
+# Reload bash environment for nvm
 source ~/.bashrc
 source ~/.bash_profile
 
-# npm
-npm i --prefix ./server graphql apollo-server apollo-datasource-rest --save
+# Install npm dependencies for graphql_server
+npm i --prefix ./graphql_server graphql apollo-server apollo-datasource-rest --save
 
 # Install and Update Ruby Gems for client
 gem install --install-dir client/ bundler graphql rails
@@ -36,7 +35,10 @@ gem install --install-dir client/ sqlite3 --source 'https://rubygems.org/'
 gem update --install-dir client/
 
 # Run bundler to install Ruby gems
-bundle install --path client/
+bundle install
+#bundle install --path client/
+bundle update
+
 
 # Request API Key from user
 echo "Enter your AlphaVantage Key. You can find your key by going to
@@ -44,8 +46,8 @@ https://www.alphavantage.co/support/#api-key
 Default Value (demo)"
 read apikey
 apikey=${apikey:-demo}
-echo "module.exports = { apikey: '"$apikey"'};" > server/vars.env
+echo "module.exports = { apikey: '"$apikey"'};" > graphql_server/vars.env
 
 
 # Execute the application
-node server/server.js
+node graphql_server/server.js
