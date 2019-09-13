@@ -1,2 +1,2 @@
 #!/bin/bash
-node server/server.js
+node graphql_server/server.js
