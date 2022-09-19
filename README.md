@@ -1,16 +1,26 @@
 # TrackAndBuy
-Tracks down stocks for you to buy
+This script determines if your favorite stock is on its way to make a comeback, and minimize your loss after a BUY
 
-Run the following commands in order
-
-`git clone github.com/adityadev91/TrackAndBuy`
-
-`./setup_and_run.sh`
-
-To access the GraphQL interface, navigate to `localhost:4000` on your browser
-
-For subsequent runs, simply run
-
-`./run.sh`
-
-Work in Progress...
+Run the following commands in your terminal
+```
+git clone github.com/adityadev91/TrackAndBuy
+cd TrackAndBuy
+```
+### Setup
+#### Method 1: Using Docker
+```
+docker build -t TrackAndBuy .
+```
+#### Method 2: Without Docker
+```
+./setup.sh
+```
+### Run
+#### Method 1: Using Docker
+```
+docker run -dp 3000:3000 TrackAndBuy <symbol>
+```
+#### Method 2: Without Docker
+```
+python main.py <symbol>
+```
