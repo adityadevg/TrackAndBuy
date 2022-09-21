@@ -4,3 +4,4 @@ venv
 
 # System Files
 .DS_Store
+.idea

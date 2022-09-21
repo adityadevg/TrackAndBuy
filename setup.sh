@@ -19,21 +19,23 @@ do
         command -v pyenv >/dev/null || export PATH=$PYENV_ROOT/bin:$PATH
         eval "$(pyenv init -)"
       } >> "$HOME/$TERMINAL_INIT_FILE"
-      echo "pyenv path updated in $HOME/$TERMINAL_INIT_FILE"
+      echo -e "\npyenv path updated in $HOME/$TERMINAL_INIT_FILE\n"
       break
     fi
 done
 
 git clone https://github.com/pyenv/pyenv-update.git "$(pyenv root)/plugins/pyenv-update"
 pyenv update
-pyenv install 3.10.0
-cd "$PROJECT_DIR" && pyenv local 3.10.0
+PYTHON_VERSION=$(cat "$PROJECT_DIR"/.python-version)
+pyenv install "$PYTHON_VERSION"
+cd "$PROJECT_DIR" && pyenv local "$PYTHON_VERSION"
 xdg-open https://www.alphavantage.co/support/#api-key > /dev/null 2>&1
 echo "Get your free AlphaVantage key"
 echo "Enter your API Key: "
-read api_key
+read -r api_key
 
 cat << EOF >> "$HOME/$TERMINAL_INIT_FILE"
 export FINANCE_ALPHAVANTAGE_API_KEY=$api_key
 EOF
-exec "$SHELL"
+source "$HOME/$TERMINAL_INIT_FILE"
+cd "$PROJECT_DIR" || echo "Unable to change to $PROJECT_DIR"

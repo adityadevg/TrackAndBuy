@@ -3,7 +3,7 @@ This script determines if your favorite stock is on its way to make a comeback, 
 
 Run the following commands in your terminal
 ```
-git clone github.com/adityadev91/TrackAndBuy
+git clone github.com/adityadevg/TrackAndBuy
 cd TrackAndBuy
 ```
 ### Setup
