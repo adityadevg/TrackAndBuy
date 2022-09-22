@@ -1,15 +1,14 @@
-from apscheduler.schedulers.blocking import BlockingScheduler
+from apscheduler.schedulers.blocking import AsyncIOScheduler
 from consts import SYMBOLS
 from main import Main
 
 
-sched = BlockingScheduler()
+scheduler = AsyncIOScheduler(timezone="America/Toronto")
 
-
-@sched.scheduled_job('cron', day_of_week='mon-fri', hour=17)
+@scheduler.add_job("cron",day_of_week="mon-fri",hour="17")
 def scheduled_job():
     for symbol in SYMBOLS:
         Main(symbol)
 
 
-sched.start()
+scheduler.start()
