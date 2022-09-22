@@ -1,18 +1,11 @@
-from consts import *
-import requests
-import sys
-import notify
+import utils
+import time
 
 
-def get_str_from_obj(obj):
-	return "&".join(f"{key}={obj[key]}" for key in obj)
-
-
-if len(sys.argv) != 2:
-	raise ValueError("Needs only 1 argument - Company Tickr. Eg: python main.py VUG")
-
-symbol = sys.argv[1]
-PARAMS["symbol"] = symbol
-response = requests.get(API_URL % get_str_from_obj(PARAMS))
-change_percent = response.json()["Global Quote"]["10. change percent"]
-notify.send(f"{symbol} has now increased by {change_percent} today")
+class Main:
+	def __init__(self, symbol):
+		current_time = time.strftime("%Y/%M/%D-%H:%M:%S", time.localtime())
+		change_percent = utils.safe_parallel_run(symbol=symbol, fn=utils.get_symbol_data)
+		utils.thread_safe_print(f"{current_time}: {symbol}:{change_percent}")
+		if change_percent > 5:
+			utils.send_notification(symbol=symbol, change_percent=change_percent)

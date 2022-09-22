@@ -28,5 +28,6 @@ CARRIERS = {
 	"verizon": "@vtext.com",
 	"sprint": "@page.nextel.com",
 	"rogers": "@sms.rogers.com",
-	"chatr": "@pcs.rogers.com",
+	"chatr": "@sms.rogers.com",
 }
+SYMBOLS = os.getenv("PORTFOLIO_STOCKS", [])
