@@ -1,4 +1,4 @@
-from apscheduler.schedulers.blocking import AsyncIOScheduler
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from consts import SYMBOLS
 from main import Main
 
