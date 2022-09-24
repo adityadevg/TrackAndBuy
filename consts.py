@@ -1,4 +1,5 @@
 import os
+import json
 
 missing_env = []
 MANDATORY_ENVS = ["FINANCE_ALPHAVANTAGE_API_KEY", "GMAIL_APP_TOKEN", "GMAIL_USERNAME", "PHONE_NUMBERS"]
@@ -30,4 +31,4 @@ CARRIERS = {
 	"rogers": "@sms.rogers.com",
 	"chatr": "@sms.rogers.com",
 }
-SYMBOLS = os.getenv("PORTFOLIO_STOCKS", [])
+SYMBOLS = json.loads(os.getenv("PORTFOLIO_STOCKS", []))
