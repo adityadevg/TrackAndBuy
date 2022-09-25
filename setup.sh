@@ -39,3 +39,4 @@ export FINANCE_ALPHAVANTAGE_API_KEY=$api_key
 EOF
 source "$HOME/$TERMINAL_INIT_FILE"
 cd "$PROJECT_DIR" || echo "Unable to change to $PROJECT_DIR"
+pyenv exec python -m pip install -r "$PROJECT_DIR"/requirements.txt
